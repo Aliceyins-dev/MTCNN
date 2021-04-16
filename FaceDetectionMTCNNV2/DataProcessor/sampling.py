@@ -31,36 +31,6 @@ class FaceDataset(Dataset):
         return img_data, classify, offset
 
 
-if __name__ == '__main__':
-    dataset = FaceDataset(r"E:\FaceDetectionMTCNNV2\datasets\48")
-    print(len(dataset))
-    print(dataset[0])
-    # data = DataLoader(dataset=dataset, batch_size=40001, shuffle=True)
-    # data = next(iter(data))[0]
-    # print(data)
-    # mean = torch.mean(data, dim=(0, 2, 3))
-    # std = torch.std(data, dim=(0, 2, 3))
-    # print(mean)
-    # print(std)
-
-
-
-"""
-12:
-tensor([0.5330, 0.4360, 0.3879])
-tensor([0.2985, 0.2813, 0.2797])
-24:
-tensor([0.5328, 0.4370, 0.3888])
-tensor([0.3027, 0.2826, 0.2810])
-48:
-tensor([0.5324, 0.4358, 0.3868])
-tensor([0.3042, 0.2813, 0.2792])
-
-tensor([0.5327, 0.4363, 0.3878])
-tensor([0.3018, 0.2817, 0.2800])
-
-"""
-
 
 
 
