@@ -117,11 +117,5 @@ def generate_sample(facesize, stopvalue):
         traceback.print_exc()
 
 
-if __name__ == '__main__':
-    # generate_sample(12, 50000)
-    # generate_sample(24, 50000)
-    generate_sample(48, 50000)
-
-
 
 
