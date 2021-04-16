@@ -131,18 +131,3 @@ def calibrate_box(bboxes, offsets):
     translation = np.hstack([w, h, w, h])*offsets
     bboxes[:, 0:4] = bboxes[:, 0:4] + translation
     return bboxes
-
-
-if __name__ == '__main__':
-    # a = np.array([1, 1, 5, 5, 0.5])
-    # b = np.array([[2, 2, 6, 6], [6, 6, 9, 9]])
-    # res = iou(a, b)
-    # print(res)
-    b = np.array([[3, 3, 6,  6, 0.7], [2, 2, 7, 7, 0.8], [1, 1, 4, 4, 0.4]])
-    print(b.shape)
-    res = nms(b)
-    print(res)
-    c = np.array([[3, 2, 6, 7, 0.7], [2, 2, 4, 8, 0.8], [1, 4, 8, 9, 0.4]])
-
-    res = convert_to_square(c)
-    print(res)
