@@ -98,11 +98,3 @@ class ONet(nn.Module):
         classify = torch.sigmoid(self.conv6_1(x))
         offset = self.conv6_2(x)
         return classify, offset
-
-
-if __name__ == '__main__':
-    conv = DepthwiseConvBlock(3, 32, 3, 1)
-    data = torch.randn((2, 3, 416, 416), dtype=torch.float32)
-    print(data)
-    out = conv(data)
-    print(out)
